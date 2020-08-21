@@ -1,0 +1,104 @@
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+html {
+  font-family: "Baloo Tamma 2";
+  background: linear-gradient(#edd487, #edbc87, #ed9b87) no-repeat center;
+  text-align: center;
+  height: 100%;
+  font-size: 1em;
+  word-spacing: 2px; 
+  color: 	#FFFFFF;
+}
+header {
+  margin: 2em auto;
+}
+.control-box {
+  font-size: 0.75em;
+  padding: 2em 1em 2em;
+}
+.bs-container {
+  padding: 2em 1em 2em;
+  display: flex;
+  align-content: center;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+.bs-container > div {
+  width: 20em;
+  display: inline-block;
+  align-content: space-around;
+}
+#start {
+  color: white;
+  background-color: #f1937b;
+}
+#stop {
+  color: white;
+  background-color: #f1937b;
+}
+#reset {
+  color: white;
+  background-color: #f1937b;
+}
+#break-increment,
+#break-decrement,
+#session-increment,
+#session-decrement {
+  background-color: transparent;
+  color: white;
+  border: 0;
+  width: 2em;
+}
+#session-length,
+#break-length {
+  font-family: "Baloo Tamma 2";
+  font-size: 1em;
+  border: 0;
+  text-align: center;
+  background-color: transparent;
+}
+
+#heading {
+	font-size: 2em;  
+}
+
+#timer-label {
+  font-size: 1rem;
+  word-spacing: 2px;
+}
+#time-left {
+  font-size: 2rem;
+  word-spacing: 2px; 
+}
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(184, 166, 9); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange; }
+}
+
+

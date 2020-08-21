@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<link href='https://fonts.googleapis.com/css?family=Baloo Tamma 2' rel='stylesheet'>
+
+<head>
+  <div class="typewriter">
+    <h1>Creamdomo: Pomodomo with Cats!</h1>
+  </div>
+  <LINK href="style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+</head>
+<p></p>
+  <!-- random pic slideshow -->
+  <img id="slide" width="370" height="200">
+
+</header>
+
+<body>
+  <div class="control-box">
+    <button id="start">►</button><button id="stop">‖</button>
+    Please pause before restarting current session
+    <button id="reset">↻</button>
+  </div>
+
+  <h1 id="time-left">00:00</h1>
+
+  <!-- break and session length flexbox -->
+  <div class="bs-container">
+    <div>
+      <p id="break-label">break length</p>
+      <button onclick="document.querySelector('#break-length').stepUp()" id="break-increment">↑</button>
+      <input id="break-length" value="5" type="number" min="1" max="30" readonly="true">
+      <button onclick="document.querySelector('#break-length').stepDown()" id="break-decrement">↓</button>
+    </div>
+    <div>
+      <p id="session-label">session length</p>
+      <button onclick="document.querySelector('#session-length').stepUp()" id="session-increment">↑</button>
+      <input id="session-length" value="25" type="number" min="1" max="60" readonly="true">
+      <button onclick="document.querySelector('#session-length').stepDown()" id="session-decrement">↓</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
+
